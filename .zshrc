@@ -99,6 +99,12 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Functions
+# mkgo = mkdir + cd
+mkgo () {
+  mkdir $1 && cd $1
+}
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -110,6 +116,11 @@ alias starshipconfig="vim ~/.config/starship.toml"
 alias v="nvim"
 alias vim="nvim"
 alias oldvim="\vim"
+# Windows programs
+# Fork
+alias fork="/c/Users/luan/AppData/Local/Fork/fork.exe"
+# Dev work
+alias sqw="cd ~/Dev/squareweave/"
 
 # Development Environment
 # Fix PATH
@@ -149,4 +160,4 @@ export DOCKER_HOST="tcp://localhost:2375"
 
 # Enable Vim mode for ZSH
 # THIS MUST BE AT THE LAST LINE
-bindkey -v
+# bindkey -v
