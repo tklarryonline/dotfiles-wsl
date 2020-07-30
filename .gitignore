@@ -1,3 +1,4 @@
 .config/configstore
 .config/nvim/.netrwhist
 .config/nvim/autoload
+__pycache__

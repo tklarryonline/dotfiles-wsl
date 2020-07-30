@@ -78,6 +78,7 @@ plugins=(
   docker
   git
   jump
+  thefuck
   zsh-syntax-highlighting
 )
 
