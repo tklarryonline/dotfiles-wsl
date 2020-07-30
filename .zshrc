@@ -77,6 +77,7 @@ plugins=(
   docker-compose
   docker
   git
+  jump
   zsh-syntax-highlighting
 )
 
@@ -105,10 +106,17 @@ mkgo () {
   mkdir $1 && cd $1
 }
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# PERSONAL SETTINGS (VARIABLES, ALIASES, ETC.)
+# Overriding those provided by oh-my-zsh and starship libs, plugins and themes.
+# oh-my-zsh users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
+# Variables
+# Enables CDABLEVARS to be able to cd to a parameter whose value is a valid directory.
+setopt cdablevars
+sqw=~/Dev/squareweave
+
+# Aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias starshipconfig="vim ~/.config/starship.toml"
@@ -119,8 +127,6 @@ alias oldvim="\vim"
 # Windows programs
 # Fork
 alias fork="/c/Users/luan/AppData/Local/Fork/fork.exe"
-# Dev work
-alias sqw="cd ~/Dev/squareweave/"
 
 # Development Environment
 # Fix PATH
